@@ -1,0 +1,28 @@
+[general]
+import = ["~/.config/alacritty/elysium.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.97
+padding = {x = 6, y = 6}
+dynamic_padding = true
+dimensions = {columns = 120, lines = 50}
+
+[cursor]
+style = {blinking = "Always"}
+blink_timeout = 0
+blink_interval = 700
+
+[mouse]
+hide_when_typing = true
+
+[font]
+normal = {family = "MesloLGS Nerd Font Mono", style = "Regular"}
+bold = {family = "MesloLGS Nerd Font Mono", style = "Bold"}
+italic = {family = "MesloLGS Nerd Font Mono", style = "Italic"}
+size = 12.0
+
+[colors]
+cursor = {text = "CellBackground", cursor = "CellForeground"}
