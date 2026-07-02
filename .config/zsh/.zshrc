@@ -35,7 +35,7 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
 [ -f "$XDG_CONFIG_HOME/shell/aliases.sh" ] && source "$XDG_CONFIG_HOME/shell/aliases.sh"
 
 # Colors
-export LS_COLORS="di=1;32:ex=1;35:ln=36:"
+export LS_COLORS="di=1;32:ex=1;35:ln=1;36:"
 
 # Bindings
 bindkey "^b" beginning-of-line
