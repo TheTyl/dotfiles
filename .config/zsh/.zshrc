@@ -42,5 +42,11 @@ bindkey "^b" beginning-of-line
 bindkey "^e" end-of-line
 
 # Prompt
+git_branch() {
+	echo '$(git branch 2> /dev/null | sed -n -e "s/^* \(.*\)/ (\1)/p")'
+}
+
+setopt PROMPT_SUBST
+
 NEWLINE=$'\n'
-PROMPT="${NEWLINE}%B%F{#8ca290}%~%f %F{#90a2a2}❯%f%b "
+PROMPT="${NEWLINE}%B%F{#8ea492}%~%f%F{#8792a4}$(git_branch)%f %F{#94a6a6}❯%f%b "
