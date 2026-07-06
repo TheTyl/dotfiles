@@ -49,4 +49,4 @@ git_branch() {
 setopt PROMPT_SUBST
 
 NEWLINE=$'\n'
-PROMPT="${NEWLINE}%B%F{#8ea492}%~%f%F{#8792a4}$(git_branch)%f %F{#94a6a6}❯%f%b "
+PROMPT="${NEWLINE}%B%F{#92a896}%~%f%F{#8b96a8}$(git_branch)%f %F{#96a8a8}❯%f%b "
