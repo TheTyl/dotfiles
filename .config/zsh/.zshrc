@@ -35,7 +35,7 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
 [ -f "$XDG_CONFIG_HOME/shell/aliases.sh" ] && source "$XDG_CONFIG_HOME/shell/aliases.sh"
 
 # Colors
-export LS_COLORS="di=1;32:ex=1;35:ln=1;36:"
+export LS_COLORS="di=1;93:ex=1;34:ln=1;93:"
 
 # Bindings
 bindkey "^b" beginning-of-line
@@ -49,4 +49,4 @@ git_branch() {
 setopt PROMPT_SUBST
 
 NEWLINE=$'\n'
-PROMPT="${NEWLINE}%B%F{#92a896}%~%f%F{#8b96a8}$(git_branch)%f %F{#96a8a8}❯%f%b "
+PROMPT="${NEWLINE}%B%F{#8d8976}%~%f%F{#5c7979}$(git_branch)%f %F{#909694}❯%f%b "

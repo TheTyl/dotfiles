@@ -5,4 +5,4 @@ alias la="ls -lah --color=auto --group-directories-first"
 alias c="clear"
 alias fd="fdfind"
 
-alias config="git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
+alias dotfiles="git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
