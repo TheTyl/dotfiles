@@ -1,0 +1,5 @@
+# Set resolution
+xrandr --output HDMI-A-0 --mode 2560x1440
+
+# Disable laptop screen
+xrandr --output eDP --off
