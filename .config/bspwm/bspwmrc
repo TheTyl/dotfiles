@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Name workspaces
+bspc monitor -d 1 2 3 4 5
+
+# Border rules
+bspc config border_width 2
+bspc config window_gap 5
+bspc config split_ratio 0.5
+bspc config focus_follows_pointer true
+bspc config focused_border_color "#958d68"
+bspc config normal_border_color "#858585"
+bspc config top_padding 30
+
+# Hotkey daemon
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Compositor
+pgrep -x picom > /dev/null || picom &
+
+# Wallpaper
+feh --bg-fill ~/Pictures/Wallpapers/blade_runner_2049.jpg &
+
+# Polybar
+~/.config/polybar/launch.sh &
+
+# Audio
+pulseaudio &
+
+# Disable screen blanking
+xset s off -dpms

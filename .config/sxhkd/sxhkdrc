@@ -1,0 +1,59 @@
+# Open terminal
+super + Return
+	alacritty
+
+# Open app launcher
+super + space
+	rofi -show drun -show-icons
+
+# Switch to browser's desktop
+super + b
+	bspc desktop -f 1
+
+# Open file manager
+super + e
+	nemo
+
+# Close focused window gracefully (sends WM_DELETE_WINDOW)
+super + w
+	bspc node -c
+
+# Kill focused window forcefully
+super + shift + q
+	bspc node -k
+
+# Focus window
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+# Move focused window
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east}
+
+# Toggle tile/floating
+super + f
+	bspc node -t ~floating
+
+# Toggle fullscreen
+super + shift + f
+	bspc node -t ~fullscreen
+
+# Focus desktop
+super + {1-9,0}
+	bspc desktop -f {1-9,10}
+
+# Move window to desktop
+super + shift + {1-9,0}
+	bspc node -d {1-9,10}
+
+# Change desktop layout
+super + t
+	bspc desktop -l next
+
+# Focus next window in desktop
+super + n
+	bspc node -f next.local.!hidden.window
+
+# Restart bspwm
+super + shift + r
+	bspc wm -r
