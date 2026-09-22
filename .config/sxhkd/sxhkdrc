@@ -32,11 +32,11 @@ super + shift + {h,j,k,l}
 
 # Toggle tile/floating
 super + f
-	bspc node -t ~floating
+	bspc node -t '~floating'
 
 # Toggle fullscreen
 super + shift + f
-	bspc node -t ~fullscreen
+	bspc node -t '~fullscreen'
 
 # Focus desktop
 super + {1-9,0}
