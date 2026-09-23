@@ -15,7 +15,7 @@ super + e
 	nemo
 
 # Close focused window gracefully (sends WM_DELETE_WINDOW)
-super + w
+super + shift + w
 	bspc node -c
 
 # Kill focused window forcefully
